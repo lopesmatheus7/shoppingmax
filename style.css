@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
-    font-family: "Polar"; src:url(/fonts/Polar\ Snow.otf) format("opentype") ;
-}
+    font-family: "Polar"; src:url(/fonts/Polar\ Snow.otf) format("opentype") ;}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root{
     /*paleta de cores*/
@@ -14,26 +14,22 @@
     /*SOMBRAS*/
     --box-shadow: 1px 1px 1px 2px black;
     /*FONTE*/
-    font-family: Polar;
 }
 header{
     background-image: linear-gradient(to bottom, #c0012a, #ff8800  );
-    height: 90px;
+    height: 135px;
     color: var(--color0);
-}
-h1{
-    text-align: center;
-    text-shadow: 2px 2px black; 
-    
 }
 nav a{
     color: white;
     text-decoration: none;
     text-align: center;
-    
-    
-    
-
+    font-family: 'Bebas Neue', cursive;   
+    cursor: pointer;
+}
+a:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));  
 }
 nav{
     text-align: center;
@@ -41,14 +37,15 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: auto;
-
-    
+    width: auto;   
 }
 a{
     text-align: center;
     padding-left: 50px;
     padding-right: 70px;
+}
+li{
+    list-style-type: none;
 }
 main{
     height: 900px;
@@ -60,4 +57,5 @@ footer{
 input{
     padding: 5px;
     border-radius: 5px;
+    
 }
